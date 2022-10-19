@@ -1,0 +1,4 @@
+{
+    "db": "mongodb://localhost/movie_rental_test"
+  }
+  
