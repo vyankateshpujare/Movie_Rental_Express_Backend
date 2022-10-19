@@ -13,7 +13,7 @@ router.get("/", async (req, res, next) => {
   // try {
   const genres = await Genre.find();
   if (genres && genres.length === 0) {
-    return res.status(404).send("genre with given id is not present");
+    return res.status(404).send("genres not found");
   }
   res.status(200).send(genres);
   // } catch (err) {
