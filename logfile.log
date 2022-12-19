@@ -412,3 +412,30 @@
 {"level":"error","message":"Cannot destructure property 'path' of 'sortColumn' as it is undefined."}
 {"level":"error","message":"Cannot destructure property 'path' of 'sortColumn' as it is undefined."}
 {"level":"error","message":"Cannot destructure property 'path' of 'sortColumn' as it is undefined."}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"genre is not defined"}
+{"level":"error","message":"Schema hasn't been registered for model \"Genre\".\nUse mongoose.model(name, schema)"}
+{"level":"error","message":"we have got an uncaught exception"}
+{"level":"error","message":"we have got an uncaught exception"}

@@ -30,12 +30,12 @@ router.post("/count", async (req, res) => {
 });
 
 router.get("/:id", validateObjectId, async (req, res) => {
-  const movie = await Movie.findById(req.params.id);
+  const movie = await Movie.findById(req.params.id).populate("genre", "name");
   if (!movie) return res.status(404).send("movie with given id not found");
   res.status(200).send(movie);
 });
 
-router.post("/", auth, async (req, res) => {
+router.post("/", async (req, res) => {
   const { error } = validateMovie(req.body);
   if (error) {
     return res.status(400).send(error.details[0].message);
@@ -49,10 +49,11 @@ router.post("/", auth, async (req, res) => {
     title: req.body.title,
     dailyRentalRate: req.body.dailyRentalRate,
     numberInStock: req.body.numberInStock,
-    genre: {
-      _id: genre._id,
-      name: genre.name,
-    },
+    genre: req.body.genreId,
+    // genre: {
+    //   _id: genre._id,
+    //   name: genre.name,
+    // },
     // liked: req.body.liked,
   });
 
@@ -73,8 +74,11 @@ router.post("/pfs", async (req, res) => {
   if (genreName) {
     query["genre.name"] = genreName;
   }
-  const {path,order}=sortColumn;
-  const movies = await Movie.find(query).limit(limit).skip(skip).sort({[path]:order});
+  const { path, order } = sortColumn;
+  const movies = await Movie.find(query)
+    .limit(limit)
+    .skip(skip)
+    .sort({ [path]: order });
   res.send(movies);
 });
 

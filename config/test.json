@@ -1,4 +1,3 @@
 {
-    "db": "mongodb://localhost/movie_rental_test"
-  }
-  
+  "db": "mongodb://localhost/movie_rental_test"
+}
